@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<app name="HelloWorld" namespace="PHPAnt\HelloWorld">
+  <file>
+    <name>/var/www/html/includes/apps/ant-app-hello-world/.git</name>
+    <hash>da39a3ee5e6b4b0d3255bfef95601890afd80709</hash>
+  </file>
+  <file>
+    <name>/var/www/html/includes/apps/ant-app-hello-world/public.key</name>
+    <hash>42b41ffd19f1331405a8a026a626c8f046583ca3</hash>
+  </file>
+  <file>
+    <name>/var/www/html/includes/apps/ant-app-hello-world/app.php</name>
+    <hash>1ce353a9873633eb11247c89a2aebc26c7e42363</hash>
+  </file>
+  <action>
+    <hook>cli-load-grammar</hook>
+    <function>loadHelloWorld</function>
+    <priority>90</priority>
+    <signature>bf0391e8f9f903238163c3be37522a5c281256cc</signature>
+  </action>
+  <action>
+    <hook>cli-init</hook>
+    <function>declareMySelf</function>
+    <priority>50</priority>
+    <signature>53c84e4cc7f4ce458beb0a0f301e669cfbcda139</signature>
+  </action>
+  <action>
+    <hook>cli-command</hook>
+    <function>processCommand</function>
+    <priority>50</priority>
+    <signature>d44f7e3739770a1c297d1468100728eebf94a8da</signature>
+  </action>
+</app>
